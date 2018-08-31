@@ -1,0 +1,8 @@
+Nombre: Cajeros Automáticos
+ Descripcion: <p>Listado de Cajeros Autom&aacute;ticos disponibles en la Ciudad de Buenos Aires.</p>
+
+ Notas: 
+ Categorias:  Actividad Económica
+ Etiquetas:  cajeros csv banco economía USIG
+ Publicacion: Wed Feb 08 2017 14:56:53 GMT-0300 (ART)
+ Ultima modificacion: Wed Feb 08 2017 14:56:53 GMT-0300 (ART)
