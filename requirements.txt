@@ -1,5 +1,6 @@
 numpy==1.9.0
 pandas
+pipenv
 pyTelegramBotAPI
 scipy==0.13.3
 scikit-learn
