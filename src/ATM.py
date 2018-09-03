@@ -6,6 +6,9 @@ class ATM():
         self.bank=bank
         self.address=address
 
+    def getId(self):
+        return self.id
+
     def getLoc(self):
         return self.loc
 

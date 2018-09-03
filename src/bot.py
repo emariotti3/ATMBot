@@ -2,16 +2,16 @@ import sys
 import telebot
 import urllib
 from telebot import types
-from geoloc import ATMFinder
+from ATMFinder import ATMFinder
 
 bot = telebot.TeleBot(sys.argv[1])
 
 API_KEY = sys.argv[2]
 STATICMAP_URL = "https://maps.googleapis.com/maps/api/staticmap?center={},{}&zoom=15&size=400x300&markers=color:red|{},{}"
 MAX_DST = 500
-K_NEIGHBOURS = 3
 CANCEL = "Cancel"
 USER_ACTIONS = {}
+MAX_OPS = 1000
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
@@ -51,9 +51,9 @@ def handle_location(message):
 		return True
 
 	#Get latest atm command issued by this user to identify network.
-	#Then find closest ATMs from that network. 
+	#Then find closest ATMs from that network.
 	qnetwork = USER_ACTIONS[message.chat.id]
-	atms = ATMFinder(K_NEIGHBOURS,MAX_DST).knn([userLat,userLng],qnetwork)
+	atms = ATMFinder(MAX_DST).knn([userLat,userLng],MAX_OPS,qnetwork)
 
 	if len(atms)>0:
 		mapUrl+= "&markers=color:blue|label:{}".format(qnetwork[0])

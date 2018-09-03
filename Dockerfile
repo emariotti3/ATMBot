@@ -1,6 +1,6 @@
 FROM python:2.7-slim
 
-ENV TOKEN "667720183:AAGKnQxLDRbrHfGFw21G0Z2TuLndc-1tkTY"
+ENV TELEGRAMBOT_TOKEN "..."
 ENV GOOGLE_API_KEY "..."
 
 # Copy the current directory contents into the container at /app
@@ -14,4 +14,4 @@ RUN pip install --trusted-host pypi.python.org -r ./requirements.txt
 EXPOSE 80
 
 # Run bot.py when the container launches
-CMD python bot.py ${TOKEN} ${GOOGLE_API_KEY}
+CMD python bot.py ${TELEGRAMBOT_TOKEN} ${GOOGLE_API_KEY}
