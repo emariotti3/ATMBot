@@ -6,6 +6,10 @@ This Telegram bot will use your current location to show you the ATMs that are n
 To use it, you will need to run this server and use the bot username: *atmmap_bot* to talk to it.
 You can also reset the bot token defined in the Dockerfile.
 
+## Contributors
+
+- [Eugenia Mariotti](https://github.com/emariotti3)
+
 ## Requirements
 
 - Docker
