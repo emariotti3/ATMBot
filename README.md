@@ -14,7 +14,7 @@ You can also reset the bot token defined in the Dockerfile.
 
 ## Requirements
 
-- Docker
+- [Docker](https://docker.com)
 
 ## Running the server
 
