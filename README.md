@@ -1,5 +1,7 @@
 # Telegram Bot: ATM Finder
 
+This bot will help you find the nearest ATM.
+
 ## Introduction
 
 ### What can this bot do?
